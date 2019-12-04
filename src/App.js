@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import HomePage from "./pages/homepage/homepage.component";
 import ShopPage from "./pages/shop/shop.component";
-import { Route, Switch } from "react-router-dom";
+import { Route, Switch, Redirect } from "react-router-dom";
 import Header from "./components/header/header.component";
 import SignInAndSignUpPage from "./pages/sign-in-and-signup/sign-in-and-signup.component";
 import { auth, createUserProfileDocument } from "./firebase/firebase.utils";
@@ -28,7 +28,7 @@ class App extends Component {
         });
       }
 
-      this.setState({ currentUser: userAuth }, () => console.log(this.state));
+      setCurrentUser(null);
     });
   }
 
@@ -43,12 +43,27 @@ class App extends Component {
         <Switch>
           <Route exact path="/" component={HomePage} />
           <Route exact path="/shop" component={ShopPage} />
-          <Route exact path="/signin" component={SignInAndSignUpPage} />
+          <Route
+            exact
+            path="/signin"
+            component={SignInAndSignUpPage}
+            render={() =>
+              this.props.currentUser ? (
+                <Redirect to="/" />
+              ) : (
+                <SignInAndSignUpPage />
+              )
+            }
+          />
         </Switch>
       </div>
     );
   }
 }
+
+const mapStateToProps = ({ user }) => ({
+  currentUser: user.currentUser
+});
 
 const mapDispatchToProps = dispatch => ({
   setCurrentUser: user => dispatch(setCurrentUser(user))
