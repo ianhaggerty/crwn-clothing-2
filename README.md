@@ -4,27 +4,43 @@ Crown clothing is a project I worked on for whilst learning `react` with `redux`
 
 Authentication is managed with firebase and a mock checkout process is implemented using stripe.
 
+## Usage
+
+```
+npm install .
+```
+
+```
+npm run start
+```
+
 ## Images
 
 - Homepage
   ![homepage](images/homepage.png)
 
 - Categories
+
   ![categories](images/categories.png)
 
 - Jackets
+
   ![jackets](images/jackets.png)
 
 - Add to cart
+
   ![add to cart](images/add_to_cart.png)
 
 - Cart
+
   ![cart](images/cart.png)
 
 - Login (firebase)
+
   ![login](images/login.png)
 
 - Checkout (stripe)
+
   ![stripe](images/stripe.png)
 
 ## A Note from the Author
