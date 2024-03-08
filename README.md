@@ -1,20 +1,54 @@
-## Lesson-1
+# README.md
 
-In this lesson, we are exploring how to use Create React App. We are leveraging it to help us bootstrap our application and handle the webpack configuration. 
+Crown clothing is a project I worked on for whilst learning `react` with `redux`. It is a simple e-commerce website that allows users to browse clothing and add them to their cart.
 
-# How to fork and clone
+Authentication is managed with firebase and a mock checkout process is implemented using stripe.
 
-One quick note about cloning this project. If you wish to make commits and push the code up after cloning this repo, you should fork the project first. In order to own your own copy of this repository, you have to fork it so you get your own copy on your own profile!
+## Images
 
-You can see the fork button in the top right corner of every GitHub project; click it and a copy of the project will be added to your GitHub profile under the same name as the original project.
+- Homepage
+  ![homepage](images/homepage.png)
 
-![alt text](https://i.ibb.co/1YN7SJ6/Screen-Shot-2019-07-01-at-2-02-40-AM.png "image to fork button")
+- Categories
+  ![categories](images/categories.png)
 
-After forking the project, simply clone it the way you would from the new forked project in your own GitHub repository and you can commit and push to it freely!
+- Jackets
+  ![jackets](images/jackets.png)
 
+- Add to cart
+  ![add to cart](images/add_to_cart.png)
 
-# After you fork and clone:
+- Cart
+  ![cart](images/cart.png)
 
-## Install dependencies
+- Login (firebase)
+  ![login](images/login.png)
 
-In your terminal after you clone your project down, remember to run either `yarn` or `npm install` to build all the dependencies in the project.
+- Checkout (stripe)
+  ![stripe](images/stripe.png)
+
+## A Note from the Author
+
+Thanks for your interest! Please see my [GitHub](https://github.com/ianhaggerty) or [Linkedin](https://www.linkedin.com/in/ihaggerty/) to stay updated.
+
+## MIT License
+
+Copyright (c) 2021 Ian Haggerty
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
